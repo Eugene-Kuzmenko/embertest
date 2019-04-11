@@ -1,4 +1,6 @@
-{{#each this.model as |item|}}
+{{#each this.model.itemList as |item|}}
   <div>{{item.name}}</div>
 {{/each}}
+{{input value=this.model.newItemName}}
+  <button {{action "createItem"}}>Add item</button>
 {{outlet}}
