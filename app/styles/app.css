@@ -2,6 +2,7 @@
 @import './ratio-list.css';
 @import './items.css';
 @import './buttons.css';
+@import './inputs.css';
 
 body {
   background-color: #343737;

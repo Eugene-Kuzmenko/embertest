@@ -1,5 +1,6 @@
 <div class="recipe-list">
-  {{#each this.model.recipeList as |recipe|}}
+  <AddRecipeForm />
+  {{#each this.model as |recipe|}}
     <Recipe @recipe={{recipe}} />
   {{/each}}
 </div>
