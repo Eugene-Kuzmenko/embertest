@@ -1,24 +1,24 @@
 export default function() {
   this.get('/items');
   this.post('/items');
-  this.get('/item/:id');
-  this.patch('/item/:id');
-  this.del('/item/:id');
+  this.get('/items/:id');
+  this.patch('/items/:id');
+  this.del('/items/:id');
 
   this.get('/recipes');
   this.post('/recipes');
-  this.patch('/recipe/:id');
-  this.del('/recipe/:id');
+  this.patch('/recipes/:id');
+  this.del('/recipes/:id');
 
   this.get('/recipe-item-ins');
   this.post('/recipe-item-ins');
-  this.patch('/recipe-item-in/:id');
-  this.del('/recipe-item-in/:id');
+  this.patch('/recipe-item-ins/:id');
+  this.del('/recipe-item-ins/:id');
 
   this.get('/recipe-item-outs');
   this.post('/recipe-item-outs');
-  this.patch('/recipe-item-out/:id');
-  this.del('/recipe-item-out/:id');
+  this.patch('/recipe-item-outs/:id');
+  this.del('/recipe-item-outs/:id');
 
   // These comments are here to help you get started. Feel free to delete them.
 

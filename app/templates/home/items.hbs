@@ -3,6 +3,14 @@
   <button class="button-1"{{action "createItem"}}>Add item</button>
 </div>
 {{#each this.model.itemList as |item|}}
-  <div class="item">{{item.name}}</div>
+  <div class="item">
+    <div class="item__name">{{item.name}}</div>
+    <button
+      class="button-1"
+      {{action "removeItem" item}}
+    >
+      x
+    </button>
+  </div>
 {{/each}}
 {{outlet}}

@@ -13,6 +13,9 @@ export default Route.extend({
         name: this.modelFor(this.routeName).newItemName,
       });
       item.save();
+    },
+    removeItem(item) {
+      item.destroyRecord();
     }
   }
 });
