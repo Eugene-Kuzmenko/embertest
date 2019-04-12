@@ -1,0 +1,9 @@
+<div class="ratio-list">
+  {{#each list as |ratio|}}
+    <div class="ratio">
+      <span class="ratio__qty">{{ratio.qty}}x </span>
+      {{ratio.item.name}}
+    </div>
+  {{/each}}
+</div>
+{{yield}}

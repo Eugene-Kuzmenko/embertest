@@ -1,2 +1,7 @@
-Recipes
+<div class="recipe-list">
+  {{#each this.model.recipeList as |recipe|}}
+    <Recipe @recipe={{recipe}} />
+  {{/each}}
+</div>
+
 {{outlet}}

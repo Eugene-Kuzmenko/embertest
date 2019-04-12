@@ -1,0 +1,17 @@
+.recipe {
+  padding: 5px;
+  background-color: #4a494b;
+  width: max-content;
+  margin-bottom: 5px;
+}
+
+.recipe__name {
+  color: #eaf4ff;
+  margin-bottom: 3px;
+}
+
+.recipe__ratio-block {
+  display: flex;
+
+}
+

@@ -1,9 +1,9 @@
-<h1>Hello. Welcome to embercraft</h1>
-<navs>
-  {{#link-to 'home.items'}}Items{{/link-to}}
-  {{#link-to 'home.recipes'}}Recipes{{/link-to}}
-  {{#link-to 'home.chain'}}Chain{{/link-to}}
+<h1 class="main__title">Hello. Welcome to embercraft</h1>
+<navs class="main__nav">
+  {{#link-to 'home.items' class='nav__link'}}Items{{/link-to}}
+  {{#link-to 'home.recipes' class='nav__link'}}Recipes{{/link-to}}
+  {{#link-to 'home.chain' class='nav__link'}}Chain{{/link-to}}
 </navs>
-<section>
+<section class="main__content">
   {{outlet}}
 </section>
