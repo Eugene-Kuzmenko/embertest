@@ -1,0 +1,16 @@
+<div class="add-item">
+  {{input value=this.model.newItemName class='text-input-1'}}
+  <button class="button-1"{{action "createItem"}}>Add item</button>
+</div>
+{{#each this.model.itemList as |item|}}
+  <div class="item-list-entry">
+    <div class="item__name">{{item.name}}</div>
+    <button
+      class="button-1"
+      {{action "removeItem" item}}
+    >
+      x
+    </button>
+  </div>
+{{/each}}
+{{outlet}}

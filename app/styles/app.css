@@ -1,0 +1,38 @@
+@import './recipe.css';
+@import './ratio-list.css';
+@import './items.css';
+@import './buttons.css';
+@import './inputs.css';
+
+body {
+  background-color: #343737;
+}
+
+.main__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.main__title {
+  color: #eaeeee;
+  text-align: center;
+}
+
+.nav__link, .nav__link:visited, .nav__link:link {
+  padding: 4px;
+  background-color: #182534;
+  border: #47484b 1px solid;
+  color: #dff3ff;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  background-color: #2a4764;
+}
+
+.main__content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}

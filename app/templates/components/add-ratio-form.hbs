@@ -1,0 +1,40 @@
+<div class="add-recipe__ratio">
+  {{#ui-dropdown
+    class="selection"
+    selected=this.item
+    onChange=(action (mut this.item))
+  }}
+    <div class="default text">Item</div>
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      {{#each this.availableItems as |item|}}
+        <div data-value="{{map-value mapper item}}" class="item">
+          {{item.name}}
+        </div>
+      {{/each}}
+    </div>
+  {{/ui-dropdown}}
+  {{#ui-dropdown
+    class="selection"
+    selected=this.isOut
+    onChange=(action (mut this.isOut))
+  }}
+    <div class="default text">Type</div>
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <div data-value="false" class="item">
+        In
+      </div>
+      <div data-value="true" class="item">
+        Out
+      </div>
+    </div>
+  {{/ui-dropdown}}
+  {{input
+    type="number"
+    value=this.qty
+    class="text-input-1"
+  }}
+  <button class="button-1" {{action "addRatio"}}>+</button>
+</div>
+{{yield}}

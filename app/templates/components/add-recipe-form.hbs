@@ -1,0 +1,11 @@
+<Recipe @recipe={{this.model.newRecipe}} />
+<div class="add-recipe">
+  {{input value=this.name class="text-input-1"}}
+  <AddRatioForm />
+  <div class="add-recipe__button">
+    <button class="button-1" {{action "addRecipe"}}>
+      Add Recipe
+    </button>
+  </div>
+</div>
+{{yield}}

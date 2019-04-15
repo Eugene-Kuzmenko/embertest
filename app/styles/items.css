@@ -1,0 +1,20 @@
+.item-list-entry{
+  background-color: #090c33;
+  color: #a0accb;
+  padding: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.item__name {
+  margin-right: 5px;
+}
+
+.add-item{
+  display: flex;
+  margin-bottom: 5px;
+}
+
+
+
